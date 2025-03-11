@@ -218,7 +218,7 @@ footer {
 
 /* блок с различными разрешениями */
 
-@media (width >= 768px){
+@media (width >= 768px) {
   .header {
     padding: 20px;
   }

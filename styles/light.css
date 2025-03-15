@@ -1,27 +1,34 @@
-.page.theme_light {
+/*
+  Специально для светлой темы при наличии класса.
+  Здесь окажутся стили, которые нужно переопределить принудительно,
+  переключая тему
+*/
+:root.theme-light {
   --background-image: url("../images/cover-image-light.png");
-  --accent-color: #ff8dcb;
-  --accent-color-opacity: #32312d66;
-  --text-color: #353430;
-  --decoration-color: var(--text-color);
-  --background-color: #fff1f7;
-  --header1-color: #ffc2e6;
-  --header2-color: var(--text-color);
-  --header3-color: var(--text-color);
   --is-light: hidden;
+  --background-color: #fff1f7;
+  --color-shadow: #32312d66;
+  --accent-color: #ff8dcb;
+  --p-color: #353430;
+  --h1-color: #ffc2e6;
+  --title-decor-color: #353430;
+  --h3-color: #353430;
+  --button-color: #353430;
+  --button-color-shadow: #32312D66;
+  
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    --background-image: url("../images/cover-image-light.png");
-    --accent-color: #ff8dcb;
-    --accent-color-opacity: #32312d66;
-    --text-color: #353430;
-    --decoration-color: var(--text-color);
-    --background-color: #fff1f7;
-    --header1-color: #ffc2e6;
-    --header2-color: var(--text-color);
-    --header3-color: var(--text-color);
-    --is-light: hidden;
-    }
+.theme-light .page {
+  --background-image: url("../images/cover-image-light.png");
+  --is-light: hidden;
+  --background-color: #fff1f7;
+  --color-shadow: #32312d66;
+  --accent-color: #ff8dcb;
+  --p-color: #353430;
+  --h1-color: #ffc2e6;
+  --title-decor-color: #353430;
+  --h3-color: #353430;
+  --button-color: #353430;
+  --button-color-shadow: #32312D66;
 }
+

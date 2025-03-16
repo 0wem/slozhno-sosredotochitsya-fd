@@ -18,7 +18,8 @@
   
 }
 
-.theme-light .page {
+@media (prefers-color-scheme: light) {
+  :root {
   --background-image: url("../images/cover-image-light.png");
   --is-light: hidden;
   --background-color: #fff1f7;
@@ -30,5 +31,5 @@
   --h3-color: #353430;
   --button-color: #353430;
   --button-color-shadow: #32312D66;
+  }
 }
-

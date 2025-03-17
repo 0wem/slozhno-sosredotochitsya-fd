@@ -1,14 +1,12 @@
-/* header */
-
-  
 .page {
   font-family: var(--font-family);
   background-image: var(--background-image);
-  background-attachment: fixed;
+  background-color: var(--background-color);
+  background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  background-repeat: no-repeat;
-  background-color: var(--background-color);
+  height: 100vh;
+  background-attachment: fixed;
 }
 
 .header {
@@ -29,13 +27,11 @@
   font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
   font-weight: var(--bold-font-weight);
   line-height: var(--s-line-height);
-  justify-self: start;
 }
 
 .header__p {
   grid-column: 1 / 3;
-  justify-content: end;
-  display: inline-block;
+
 }
 
 .title-decor {
@@ -278,7 +274,7 @@
     grid-column: 2 / 4;
   }
   
-  .card-row {
+  .content-adaptive-section .card {
     grid-column: 1 / 4;
   }
 
@@ -343,18 +339,17 @@
     display: flex;
   }
 
-  .content-wrap-section {
-    grid-template-columns: repeat((3, 1fr));
+  .content-adaptive-section {
+    grid-template-columns: repeat(3, 1fr);
   }
 
-  .card-row {
+  .content-adaptive-section .card {
     grid-column: span 1;
-    grid-row: 2/4;
+    
   }
 
-  .content-wrap-title {
-    grid-row: span 1;
-    grid-column: span 1;
+  .content-title-adaptive {
+    grid-column: 1 / -1;
   }
 
   .main {
